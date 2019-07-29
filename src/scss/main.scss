@@ -6,11 +6,49 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: white;
+  background: $lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: arial;
+}
+
+.header {
+  text-align: center;
+  font-size: 36px;
+}
+
+.form {
+  &__label {
+    display: block;
+    font-size: 18px;
+  }
+
+  &__message {
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  &__save, &__load{
+    font-size: 18px;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 5px;
+    &--color {
+      background-color: green;
+    }
+  }
 }
