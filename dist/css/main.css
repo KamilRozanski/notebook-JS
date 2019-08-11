@@ -344,6 +344,10 @@ body {
   padding: 8px;
   border-radius: 5px; }
 
+.form__message {
+  min-width: 320px;
+  padding: 8px; }
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
